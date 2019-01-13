@@ -1,0 +1,167 @@
+@import '_variable.scss';
+@import '_reset.scss';
+.typeform-container {
+    & .typeform-welcome-section {
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        & .welcome-message {
+            color: #804518;
+            font-size: 1.5rem;
+            line-height: 36px;
+            text-align: center;
+            width: 738px;
+            font-weight: 400;
+            margin-bottom: 65px;
+        }
+        & .cta-section {
+            width: 23%;
+            margin: 0px 44%;
+            & .start-cta {
+                color: #EAB895;
+                background-color: #804518;
+                padding: 10px 20px;
+                border: 0;
+                border-radius: 5px;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            & .start-cta-info {
+                margin-left: 15px;
+                font-size: 0.8rem;
+                font-weight: 300;
+                & .start-cta-enter {
+                    font-size: .8rem;
+                    text-transform: uppercase;
+                    margin-left: 3px;
+                    font-weight: 400;
+                    letter-spacing: 0.4px
+                }
+            }
+        }
+    }
+    & .typeform-main-section {
+        position: relative;
+        margin-top: 250px;
+        display: none;
+        & .typeform-question-list-container {
+            display: flex;
+            flex-direction: column;
+            color: #804518;
+            max-width: 780px;
+            margin: 150px auto;
+            list-style-type: none;
+            & .typeform-question-item {
+                & .question-wrapper {
+                    opacity: 0.4;
+                    & .question-count {
+                        display: inline-block;
+                        color: #5c5b59;
+                        font-size: 1.2rem;
+                        & .arrow {
+                            margin-left: 5px;
+                        }
+                    }
+                    & .question-text {
+                        display: inline-block;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        margin-left: 5px;
+                    }
+                    & .question-content {
+                        & .content {
+                            margin: 15px 41px;
+                            color: #9A6D4E;
+                        }
+                        & .answer-input {
+                            width: 88%;
+                            border: 0;
+                            margin: 30px 40px 15px;
+                            border-bottom: 1px solid #BEBDBD;
+                            font-size: 1.5rem;
+                            outline: none;
+                            display: block;
+                            color: #5C5B59;
+                            resize: none;
+                            background: none;
+                            outline: none;
+                            font-size: 1.875rem;
+                            line-height: 40px;
+                        }
+                        & .answer-confirm {
+                            width: 90%;
+                            margin: 0px auto 20px;
+                            visibility: hidden;
+                            
+                            & .ok-cta {
+                                color: #EAB895;
+                                background-color: #804518;
+                                padding: 10px 20px;
+                                border: 0;
+                                border-radius: 5px;
+                                font-size: 1.2rem;
+                                font-weight: 900;
+                                text-transform: uppercase;
+                                cursor: pointer;
+                                outline: none;
+                                & .ok-cta::before {
+                                    font-family: typeIconFont;
+                                    content: "H";
+                                }
+                            }
+                            & .ok-cta-info {
+                                margin-left: 15px;
+                                font-size: 0.8rem;
+                                font-weight: 300;
+                                & .ok-cta-enter {
+                                    font-size: .8rem;
+                                    text-transform: uppercase;
+                                    margin-left: 3px;
+                                    font-weight: 400;
+                                    letter-spacing: 0.4px
+                                }
+                            }
+                        }
+                    }
+                }
+                & .unopaque {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.typeform-progress-bar {
+    position: sticky;
+    display: none;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #FAFAFA;
+    border-top: 1px solid lightgrey;
+    & .typeform-progress-container {
+        width: 50%;
+        margin: 0 auto;
+        font-family: sans-serif;
+        font-size: 14px;
+        margin-top: 12px;
+        & .progress-status {
+
+        }
+        & .progress-wrapper {
+            height: 5px;
+            width: 240px;
+            border-radius: 200px;
+            background-color: #C3C3C2;
+            margin-top: 7px;
+            & .progress {
+                width: 20%;
+                border-radius: 200px;
+                height: 5px;
+                background-color: #5C5B59;
+            }
+        }
+    }
+}
